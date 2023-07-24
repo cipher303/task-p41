@@ -3,8 +3,7 @@ Steps to replicate if running application in a docker container(TASK1a):
 2. Run command "docker build ." inside app directory, you can run with -t command to  tag  the image or we can tag it later using "docker tag <image_id> namespace/repository:tag". Get the image id by "docker image ls". Note: docker image is created using non-root user as per best practices.
 3. We can now run the container using command: "docker run -p 8000:8000 <image_tag>"
 4. Application will start running, verify by command "curl 127.0.0.1:8000", if you have curl installed, else browse this URL "127.0.0.1:8000". 
-5. Post this, docker image was pushed to public repository for further steps.
-   Image is available at https://hub.docker.com/layers/aayush303/p41-task/v1/images/sha256-c3beda1f11ad53630b6cb02eafa1fd589e6ef69f522e75a4df40fbdda9eb183d?context=repo
+5. Post this, docker image was pushed to public repository for further steps. Image is available at https://hub.docker.com/layers/aayush303/p41-task/v1/images/sha256-c3beda1f11ad53630b6cb02eafa1fd589e6ef69f522e75a4df40fbdda9eb183d?context=repo
 
 Further steps will be related to kubernetes configuration using our public image(TASK1b)
 6. We would need to install kubectl: https://kubernetes.io/docs/tasks/tools/
